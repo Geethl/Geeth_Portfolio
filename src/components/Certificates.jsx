@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award } from 'lucide-react';
+import Tilt from 'react-parallax-tilt';
 
 const Certificates = ({ certificates }) => {
   if (!certificates || certificates.length === 0) return null;
@@ -10,7 +11,8 @@ const Certificates = ({ certificates }) => {
       
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem' }}>
         {certificates.map((cert, idx) => (
-          <div key={idx} className="glass-panel animate-fade-in" style={{ animationDelay: `${idx * 0.2}s`, padding: '0', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+          <Tilt key={idx} tiltMaxAngleX={5} tiltMaxAngleY={5} scale={1.02} transitionSpeed={2500}>
+            <div className="glass-panel animate-fade-in" style={{ animationDelay: `${idx * 0.2}s`, padding: '0', overflow: 'hidden', display: 'flex', flexDirection: 'column', height: '100%' }}>
             <div style={{ position: 'relative', width: '100%', paddingTop: '75%', background: 'rgba(255,255,255,0.02)' }}>
               {cert.imageUrl ? (
                 <img 
@@ -32,7 +34,8 @@ const Certificates = ({ certificates }) => {
                 {cert.content}
               </p>
             </div>
-          </div>
+            </div>
+          </Tilt>
         ))}
       </div>
     </section>

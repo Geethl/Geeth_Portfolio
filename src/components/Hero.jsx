@@ -1,5 +1,6 @@
 import React from 'react';
 import { Download, ChevronRight } from 'lucide-react';
+import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
   return (
@@ -8,9 +9,20 @@ const Hero = () => {
         <h2 style={{ color: 'var(--accent-primary)', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.875rem', marginBottom: '1rem' }}>
           IT Undergraduate at SLIIT
         </h2>
-        <h1 style={{ fontSize: '4rem', marginBottom: '1.5rem' }}>
+        <h1 style={{ fontSize: '4rem', marginBottom: '0.5rem' }}>
           Hi, I'm <br /><span className="text-gradient">Geeth Lakshan</span>
         </h1>
+        <div style={{ fontSize: '1.75rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '1.5rem', height: '40px' }}>
+          <Typewriter
+            options={{
+              strings: ['Full-Stack Web Developer', 'AI Project Lead', 'Future IT Project Manager', 'SQA Enthusiast'],
+              autoStart: true,
+              loop: true,
+              delay: 50,
+              deleteSpeed: 30,
+            }}
+          />
+        </div>
         <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)', marginBottom: '2.5rem', maxWidth: '600px' }}>
           Based in Kurunegala, Sri Lanka. My core technical interests lie in full-stack web development and mobile application architecture, particularly utilizing the MERN stack and React Native.
           <br /><br />

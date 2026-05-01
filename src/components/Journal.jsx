@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen } from 'lucide-react';
+import Tilt from 'react-parallax-tilt';
 
 const Journal = ({ entries }) => {
   if (!entries || entries.length === 0) return null;
@@ -13,7 +14,8 @@ const Journal = ({ entries }) => {
       
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
         {entries.map((entry, idx) => (
-          <div key={idx} className="glass-panel animate-fade-in" style={{ animationDelay: `${idx * 0.2}s` }}>
+          <Tilt key={idx} tiltMaxAngleX={5} tiltMaxAngleY={5} scale={1.02} transitionSpeed={2500}>
+            <div className="glass-panel animate-fade-in" style={{ animationDelay: `${idx * 0.2}s`, height: '100%' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
               <div style={{ padding: '1rem', background: 'rgba(139, 92, 246, 0.1)', borderRadius: '12px', color: 'var(--accent-primary)' }}>
                 <BookOpen size={24} />
@@ -28,7 +30,8 @@ const Journal = ({ entries }) => {
             <p style={{ color: 'var(--text-secondary)' }}>
               {entry.content}
             </p>
-          </div>
+            </div>
+          </Tilt>
         ))}
       </div>
     </section>

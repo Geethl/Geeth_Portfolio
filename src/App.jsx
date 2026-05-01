@@ -29,30 +29,39 @@ function App() {
     const mockData = {
       journal: [
         {
-          title: 'Professionalism & Ethics in IT',
-          content: 'Learned the importance of maintaining professional standards, ethical considerations in software engineering, and effective communication strategies within diverse teams.',
+          title: 'Ethics & Professionalism in IT',
+          content: 'Through the Professional Practice and Work (PPW) module, I developed a profound understanding of the ethical responsibilities inherent in software engineering. I learned that building systems is not merely about writing efficient code, but about ensuring data privacy, unbiased algorithmic design, and maintaining the highest standards of professional integrity in every deliverable.',
           date: '2026-05-01T10:00:00.000Z'
         },
         {
-          title: 'Project Management & Collaboration',
-          content: 'Understood agile methodologies, the role of a project manager, and how to effectively track and deliver milestones in complex software projects like Aegis Life/Gaja Saviya.',
+          title: 'Leadership & Team Dynamics',
+          content: 'Leading the "Gaja Saviya" AI framework project provided practical exposure to Agile methodologies and conflict resolution. The PPW curriculum empowered me to transition my mindset from a solitary programmer to a collaborative team player, emphasizing the critical importance of transparent communication, sprint planning, and empathetic leadership in complex IT ecosystems.',
           date: '2026-04-15T10:00:00.000Z'
+        },
+        {
+          title: 'Transitioning to an IT Professional',
+          content: 'Perhaps the most significant takeaway from PPW was the paradigm shift regarding my career trajectory. I learned how to align my technical proficiency in the MERN stack and React Native with overarching business objectives. This alignment is crucial for my long-term goal of stepping into Software Quality Assurance and IT Project Management.',
+          date: '2026-03-20T10:00:00.000Z'
         }
       ],
       careerPlan: [
         {
-          title: 'Immediate Objective: Internship',
-          content: 'Secure an internship at a leading organization, specifically targeting opportunities at DIMO Lanka or Azend Technologies to gain industry exposure in SQA or Project Management.',
+          title: 'Phase 1: Industry Immersion (0-1 Years)',
+          content: 'My immediate objective is to secure a rigorous internship at an industry-leading organization such as DIMO Lanka or Azend Technologies. During this phase, I aim to transition my academic knowledge into enterprise-grade experience, specifically focusing on Software Quality Assurance (SQA) pipelines, Agile workflows, and professional project management environments.',
         },
         {
-          title: 'Long-term Objective: Leadership Roles',
-          content: 'Transition into IT roles that emphasize management and quality assurance over heavy coding, actively working toward becoming an IT Project Manager (ITPM), an SQA professional, or a Business Analyst.',
+          title: 'Phase 2: Specialization & Certification (1-3 Years)',
+          content: 'Post-graduation, I plan to solidify my position as an SQA professional or Junior Business Analyst. I will pursue globally recognized certifications such as the ISTQB Foundation Level or PMP (Project Management Professional) to validate my expertise in ensuring software reliability and managing cross-functional technical teams.',
+        },
+        {
+          title: 'Phase 3: Leadership & Strategy (3-5+ Years)',
+          content: 'My ultimate long-term trajectory is to become an IT Project Manager (ITPM). I intend to leverage my full-stack development background to bridge the communication gap between technical engineering teams and corporate stakeholders, driving high-impact, successful software deliveries from conception to deployment.',
         }
       ],
       certificates: [
         {
-          title: 'Agile Project Management Certificate',
-          content: 'Completed an online certification to solidify my understanding of Agile frameworks and project delivery pipelines.',
+          title: 'Agile Project Management Certification',
+          content: 'Completed rigorous training to solidify my theoretical understanding and practical application of Agile frameworks, Scrum methodologies, and continuous project delivery pipelines.',
           imageUrl: './certificate.png'
         }
       ]
