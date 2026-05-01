@@ -17,10 +17,10 @@ const CVSection = () => {
         </p>
         
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
-          <a href="/CV of Geeth.pdf" download="Geeth_Lakshan_CV.pdf" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>
+          <a href="./CV of Geeth.pdf" download="Geeth_Lakshan_CV.pdf" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>
             <Download size={20} /> Download CV (PDF)
           </a>
-          <a href="/CV of Geeth.pdf" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>
+          <a href="./CV of Geeth.pdf" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>
             <FileText size={20} /> View Online
           </a>
         </div>

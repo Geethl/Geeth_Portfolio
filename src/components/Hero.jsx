@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="glass-panel" style={{ width: '100%', maxWidth: '400px', aspectRatio: '1/1', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden', padding: '4px' }}>
             <div style={{ position: 'absolute', width: '150%', height: '150%', background: 'conic-gradient(from 90deg at 50% 50%, rgba(139, 92, 246, 0) 0%, rgba(139, 92, 246, 0.5) 50%, rgba(139, 92, 246, 0) 100%)', animation: 'spin 8s linear infinite' }}></div>
             <div style={{ position: 'absolute', inset: '4px', background: 'var(--bg-color)', borderRadius: '12px', zIndex: 1, overflow: 'hidden' }}>
-                <img src="/Geeth.png" alt="Geeth Lakshan" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src="./Geeth.png" alt="Geeth Lakshan" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <style>{`
                 @keyframes spin {

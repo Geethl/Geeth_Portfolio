@@ -40,7 +40,7 @@ function App() {
         {
           title: 'Agile Project Management Certificate',
           content: 'Completed an online certification to solidify my understanding of Agile frameworks and project delivery pipelines.',
-          imageUrl: '/certificate.png'
+          imageUrl: './certificate.png'
         }
       ]
     };
