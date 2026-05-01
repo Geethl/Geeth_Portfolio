@@ -138,14 +138,19 @@ a {
 
 /* Background effects */
 .bg-glow {
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(10, 10, 15, 0) 70%);
-  top: -100px;
-  left: -200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    800px circle at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
+    rgba(139, 92, 246, 0.15),
+    transparent 40%
+  );
   z-index: -1;
   pointer-events: none;
+  transition: background 0.15s ease;
 }
 
 /* Marquee Animation */

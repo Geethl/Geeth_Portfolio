@@ -20,9 +20,19 @@ function App() {
       const scroll = `${totalScroll / windowHeight}`;
       setScrollProgress(scroll * 100);
     };
-    
+
+    const handleMouseMove = (e) => {
+      document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
+      document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('mousemove', handleMouseMove);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
   }, []);
 
   useEffect(() => {
@@ -60,7 +70,7 @@ function App() {
       ],
       certificates: [
         {
-          title: 'Agile Project Management Certification',
+          title: 'Certifications...',
           content: 'Completed rigorous training to solidify my theoretical understanding and practical application of Agile frameworks, Scrum methodologies, and continuous project delivery pipelines.',
           imageUrl: './certificate.png'
         }
@@ -85,7 +95,7 @@ function App() {
     <>
       {/* Scroll Progress Bar */}
       <div style={{ position: 'fixed', top: 0, left: 0, height: '4px', background: 'var(--gradient-text)', width: `${scrollProgress}%`, zIndex: 9999, transition: 'width 0.1s ease-out' }}></div>
-      
+
       <div className="bg-glow"></div>
       <Navbar />
       <main>
