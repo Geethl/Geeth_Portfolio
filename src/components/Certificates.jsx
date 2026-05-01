@@ -20,17 +20,10 @@ const Certificates = ({ certificates }) => {
               onClick={() => setSelectedCert(cert)}
             >
               <div style={{ position: 'relative', width: '100%', paddingTop: '75%', background: 'rgba(255,255,255,0.02)' }}>
-                {cert.imageUrl ? (
-                  <img 
-                    src={cert.imageUrl} 
-                    alt={cert.title} 
-                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
-                  />
-                ) : (
-                  <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-secondary)' }}>
-                    <Award size={64} opacity={0.2} />
-                  </div>
-                )}
+                {/* Image hidden intentionally from preview as per user request */}
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-secondary)' }}>
+                  <Award size={64} opacity={0.2} />
+                </div>
                 {/* Click overlay hint */}
                 <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0, transition: 'opacity 0.3s' }} className="cert-overlay">
                   <span className="btn btn-primary">Click to View Details</span>
