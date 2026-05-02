@@ -39,18 +39,18 @@ function App() {
     const mockData = {
       journal: [
         {
-          title: 'Ethics & Professionalism in IT',
-          content: 'Through the Professional Practice and Work (PPW) module, I developed a profound understanding of the ethical responsibilities inherent in software engineering. I learned that building systems is not merely about writing efficient code, but about ensuring data privacy, unbiased algorithmic design, and maintaining the highest standards of professional integrity in every deliverable.',
+          title: 'Professional Writing & Communication',
+          content: 'The "Preparation for the Professional World" (IT4070) module has been a vital part of my final-year curriculum. A significant portion focused on the mechanics of professional writing. I learned how to move away from academic writing and adopt a concise, action-oriented business tone, carefully avoiding slang and passive voice. I now understand how to format inquiries, applications, and letters of complaint using the standard full block layout and open punctuation. Furthermore, learning the nuances of email netiquette and the proper structure of internal office memos will directly impact how I communicate with stakeholders in my future roles.',
           date: '2026-05-01T10:00:00.000Z'
         },
         {
-          title: 'Leadership & Team Dynamics',
-          content: 'Leading the "Gaja Saviya" AI framework project provided practical exposure to Agile methodologies and conflict resolution. The PPW curriculum empowered me to transition my mindset from a solitary programmer to a collaborative team player, emphasizing the critical importance of transparent communication, sprint planning, and empathetic leadership in complex IT ecosystems.',
+          title: 'Presentations & Visual Communication',
+          content: 'The PPW module also reshaped my approach to public speaking and presentations. I learned that a successful presentation requires a strict structure: a strong opening to capture interest, a well-signposted middle, and a concise conclusion. The guidelines on visual aids were highly practical, such as applying the 6x7 rule (limiting text to 6 lines and 7 words per line), using clear sans-serif fonts, and avoiding distracting animations. These techniques are actively helping me as I prepare to handle critical questions during the upcoming proposal presentation for my Gaja-Saviya project.',
           date: '2026-04-15T10:00:00.000Z'
         },
         {
-          title: 'Transitioning to an IT Professional',
-          content: 'Perhaps the most significant takeaway from PPW was the paradigm shift regarding my career trajectory. I learned how to align my technical proficiency in the MERN stack and React Native with overarching business objectives. This alignment is crucial for my long-term goal of stepping into Software Quality Assurance and IT Project Management.',
+          title: 'Interview Preparation & Soft Skills',
+          content: 'With my immediate goal of securing an internship, the interview preparation sessions were invaluable. I learned how to structure my answers to behavioral questions using the STAR method (Situation, Task, Action, Result), allowing me to clearly articulate my problem-solving skills. Beyond just answering questions, the module highlighted the profound impact of non-verbal communication, emphasizing that elements like eye contact, posture, and tone of voice convey up to 65% of the meaning in an interaction. Finally, the training on telephone etiquette and active listening equipped me with the skills to handle professional inquiries with confidence and clarity.',
           date: '2026-03-20T10:00:00.000Z'
         }
       ],

@@ -9,7 +9,7 @@ const Journal = ({ entries }) => {
     <section id="journal" className="section container">
       <h2 className="section-title">Reflective <span className="text-gradient">Journal</span></h2>
       <p style={{ textAlign: 'center', color: 'var(--text-secondary)', marginBottom: '3rem', maxWidth: '700px', margin: '0 auto 4rem auto' }}>
-        A collection of thoughts and learnings from Professional Practice and Work (PPW), focusing on ethics, project management, and collaboration.
+        Key insights from the Preparation for the Professional World (IT4070) module — covering professional writing, presentation skills, and interview preparation.
       </p>
       
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
